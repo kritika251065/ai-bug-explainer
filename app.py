@@ -1,46 +1,3 @@
-# from flask import Flask, request, jsonify
-# # Create a Flask app
-# app = Flask(__name__)
-
-# # Define a route (endpoint) for explaining bugs
-# @app.route("/explain", methods=["POST"])
-
-# def explain_bug():
-#     data = request.get_json()    # Get JSON input from user
-#     bug= data.get("bug", "")
-#     return jsonify({"explanation": f"This is a test explanation for: {bug}"})
-#     # For now, just return the bug text back as a mock response
-    
-
-# # Run the app
-# if __name__ == "__main__":
-#     app.run(debug=True)
-# def llm_bug(error_message):
-#     try:
-#         prompt = f"""
-#         I got this error in Python: {error_message}
-#         👉 Explain in simple terms what it means
-#         👉 Suggest how I can fix it
-#         """
-#         response = openai.ChatCompletion.create(
-#             model="gpt-4o-mini",
-#             messages=[{"role": "user", "content": prompt}]
-#         )
-#         return response["choices"][0]["message"]["content"]
-#     except Exception as e:
-#         return f"Could not fetch explanation: {e}"  
-#error_csv_path = config["Settings"]["error_list"]
-
-#Initialize global variables
-# def write_to_log(log_entry):
-#     print(log_entry)
-#     logfile.write(dt.now().strftime('%m/%d/%Y %H:%M -') +log_entry + "\n")
-#     return True
-
-
-
-
-
 import configparser
 import os
 import csv
@@ -97,10 +54,3 @@ if __name__ == "__main__":
             break
         print(explain_bug(user_input))
         print("-" * 50)
-
-
-    
-    # test_error = "TypeError"
-    # print(explain_bug(test_error))
-# print(explain_bug("IndexError: list index out of range"))
-# print(explain_bug("TypeError: unsupported operand type(s)"))
