@@ -1,0 +1,8 @@
+error_message,explanation
+SyntaxError, Occurs when the Python interpreter finds incorrect syntax such as missing colons mismatched parentheses or misspelled keywords
+IndentationError, Arises from incorrect indentation which is crucial in Python for defining code blocks This includes inconsistent use of spaces or tabs or incorrect indentation levels.
+NameError, Raised when a local or global name is not found typically due to using an undefined variable or misspelling a variable/function name.
+TypeError, Occurs when an operation or function is applied to an object of an inappropriate type such as attempting to add a string and an integer directly.
+ValueError, Raised when a function receives an argument of the correct type but an inappropriate value like trying to convert a non-numeric string to an integer.
+IndexError, Occurs when attempting to access an index that is outside the bounds of a sequence (e.g., list, tuple, string).
+KeyError, Raised when a dictionary key is not found during an attempt to access or modify a dictionary entry.
